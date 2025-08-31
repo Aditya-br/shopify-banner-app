@@ -2,7 +2,7 @@
   "name": "demo",
   "private": true,
   "scripts": {
-    "build": "prisma generate && next build",
+    "build": "prisma generate && remix vite:build",
     "postinstall": "prisma generate",
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
@@ -17,7 +17,8 @@
     "shopify": "shopify",
     "prisma": "prisma",
     "graphql-codegen": "graphql-codegen",
-    "vite": "vite"
+    "vite": "vite",
+    "vercel-build": "prisma generate && prisma migrate deploy && remix vite:build"
   },
   "type": "module",
   "engines": {
