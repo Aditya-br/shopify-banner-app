@@ -4,12 +4,8 @@ import { Banner, reactExtension } from '@shopify/ui-extensions-react/checkout'
 const BannerComponent = () => {
   return (
     <Banner
-      title="🎉 Big Sale! 20% Off on All Products – Limited Time Only! 🎉"
+      title="🎉 Free Shipping on All Orders! 🎉"
       tone="info"
-      onDismiss={() => {
-        // Optional: handle banner dismissal
-        console.log('Banner dismissed')
-      }}
     />
   )
 }
